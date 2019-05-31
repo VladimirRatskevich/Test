@@ -5,24 +5,20 @@ public class First {
   public static void main(String[] args) {
     hello("valodya");
 
-    double len = 5;
-    System.out.println("Площадь kvadrata so storonoy " + len + " = " + area(len));
+    Square s = new Square(5);
+    System.out.println("Площадь kvadrata so storonoy " + s.l + " = " + s.area());
 
-    double a = 4;
-    double b = 5;
-    System.out.println("Ploshad' pramougolnika so storonami " + a + " and " + b + " = " + area(a, b));
+
+    Rectangle r = new Rectangle(4,6);
+    System.out.println("Ploshad' pramougolnika so storonami " + r.a + " and " + r.b + " = " + r.area());
   }
 
   public static void hello(String somebody) {
     System.out.println("Olololo " + somebody + "!");
   }
 
-  public static double area (double l) {
-    return  l * l;
-  }
 
-  public static double area (double a, double b) {
-    return a*b;
-  }
+
+
 
 }
